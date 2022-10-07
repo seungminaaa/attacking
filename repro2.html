@@ -1,0 +1,9 @@
+<script>
+    function spoof() {
+        var w = open()
+        w.opener = null
+        w.document.write('Current URL: ' + document.URL)
+        w.location = 'https://dl.google.com/linux/direct/google-chrome-stable_current_i386.deb'
+    }
+</script>
+<a href='JavaScript:spoof()'>Download Chrome</a>
